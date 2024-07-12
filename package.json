@@ -1,0 +1,11 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "type": "module",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "scripts": {
+        "test": "jest"
+      }
+}
