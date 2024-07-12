@@ -173,7 +173,6 @@ a.link-to-start {
 
 
 .get-start {
-    margin-bottom: 120px;
     padding-top: 30px;
     height: 600px;
 }
@@ -234,4 +233,25 @@ a.link-to-start {
 
 .get-result-button {
     margin-left: auto;
+}
+
+.links-social {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: auto;
+}
+
+.link-social {
+    width: 24px;
+    height: 24px;
+    border: 12px;
+}
+
+.logo-github {
+    background-image: url('img/github.svg');
+}
+
+.logo-hh {
+    background-image: url('img/hh.ru__min_.svg');
 }
