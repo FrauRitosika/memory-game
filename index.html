@@ -29,9 +29,10 @@
         </nav>
     </header>
     <main class="main-page">
+        <h1 class="visually-hidden">Карточки для повторения материала по CSS, HTML и JS</h1>
         <section class="about">
             <div class="about-text-content">
-                <h1><a name="about">О проекте</a></h1>
+                <h2><a name="about">О проекте</a></h2>
                 <blockquote class="tagline">Начинать всегда стоит с того, что сеет сомнение</blockquote>
                 <p>Это мог быть чат-бот в Telegram, но я начинающий frontend-разработчик и мне нужна страничка для
                     тренировок приобретённых умений и подготовки к собеседованиям. На этой страничке собраны вопросы,
@@ -48,7 +49,7 @@
             <div class="rules-main-idea">
                 <img width="500" height="500" src="img/CFARACTER.png" alt="Игрок в VR-очках">
                 <div class="rules-pre-text">
-                    <h1><a name="rules">Правила</a></h1>
+                    <h2><a name="rules">Правила</a></h2>
                     <blockquote class="tagline">Многие путают свое воображение со своей памятью</blockquote>
                     <p>Карточки для запоминания – это инструмент, помогающий учащимся эффективно запоминать
                         информацию и улучшать свои навыки. С их помощью можно разбить учебный материал на удобные
@@ -84,11 +85,11 @@
             </div>
         </section>
         <section class="get-start">
-            <h1><a name="game">Играть</a></h1>
+            <h2><a name="game">Играть</a></h2>
             <div class="question-block">
-                <h2>Вопрос</h2>
+                <h3>Вопрос</h3>
                 <p class="question-text"></p>
-                <h2>Ответ</h2>
+                <h3>Ответ</h3>
                 <ul class="set-result">
                     <li>
                         <button class="set-result-button button" type="button" data-result="SOLVED" disabled>
@@ -121,6 +122,11 @@
         </ul>
     </footer>
 </body>
-<script type="module" defer src="index.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- <script type="text/babel" data-present="react" src="index.js"></script> -->
+<script type="module" src="index.js"></script>
+<script type="text/babel" data-present="react" src="react.js"></script>
 
 </html>
