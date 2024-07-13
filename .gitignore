@@ -10,6 +10,7 @@
 *.log
 *.swp
 *.DS_Store
+.vscode
 Thumbs.db
 /bin
 /build
@@ -19,3 +20,8 @@ Thumbs.db
 /vendor
 /.venv
 /.gradle
+.vscode/*    
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
