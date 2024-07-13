@@ -11,7 +11,7 @@ class StudyProgress {
 
     getRandomQuestion() {
         const unresolvedQuestion = this.questions.filter(question => question.questionResult === 'NO_RESULT');
-        if (unresolvedQuestion.length == 0) return 'Больше вопросов нет <3';
+        if (unresolvedQuestion.length === 0) return 'Больше вопросов нет <3';
         return unresolvedQuestion[this._getRandomId(unresolvedQuestion.length - 1)];
     }
 
@@ -22,7 +22,7 @@ class StudyProgress {
     getStudyProgress() {
         const progress = {};
         for (let result of this._resultCodes.codes) {
-            progress[result.code] = this.questions.filter(question => question.questionResult == result.code).length;
+            progress[result.code] = this.questions.filter(question => question.questionResult === result.code).length;
         }
         return progress;
     }
