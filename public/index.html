@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Игра в собес</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,114 +18,7 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a href="">
-                <img height="60" href="" src="img/book-opened-svgrepo-com.svg" alt="Логотип">
-            </a>
-            <ul class="sections-navigation">
-                <li class="section-nav-item"><a class="link" href="#about">О проекте</a></li>
-                <li class="section-nav-item"><a class="link" href="#rules">Правила</a></li>
-                <li class="section-nav-item"><a class="link-to-start link" href="#game">Играть</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-page">
-        <h1 class="visually-hidden">Карточки для повторения материала по CSS, HTML и JS</h1>
-        <section class="about">
-            <div class="about-text-content">
-                <h2><a name="about">О проекте</a></h2>
-                <blockquote class="tagline">Начинать всегда стоит с того, что сеет сомнение</blockquote>
-                <p>Это мог быть чат-бот в Telegram, но я начинающий frontend-разработчик и мне нужна страничка для
-                    тренировок приобретённых умений и подготовки к собеседованиям. На этой страничке собраны вопросы,
-                    ответы на которые мне полезно
-                    прокручивать в голове.</p>
-                <p><a class="link-to-send">Напишите мне</a>, если у вас есть замечания, предложения или советы по поиску
-                    работы.
-                    Привтствуется любая обратная связь.</p>
-                <a href="#game" class="link-to-start link">Играть</a>
-            </div>
-            <img width="550" height="530" src="img/img.png" alt="Игровой джойстик">
-        </section>
-        <section name="rules" class="rules">
-            <div class="rules-main-idea">
-                <img width="500" height="500" src="img/CFARACTER.png" alt="Игрок в VR-очках">
-                <div class="rules-pre-text">
-                    <h2><a name="rules">Правила</a></h2>
-                    <blockquote class="tagline">Многие путают свое воображение со своей памятью</blockquote>
-                    <p>Карточки для запоминания – это инструмент, помогающий учащимся эффективно запоминать
-                        информацию и улучшать свои навыки. С их помощью можно разбить учебный материал на удобные
-                        для запоминания кусочки.</p>
-                </div>
-            </div>
-            <div class="rules-text">
-                <h2>Как играть</h2>
-                <ul>
-                    <li class="first-line">Переходим в раздел <a class="link" href="#game">Играть</a></li>
-                    <li>Открывается первая карточка, в которой нужно изучить текст вопроса</li>
-                    <li>Если ответ нам известен, его нужно сформулировать полными предложениями и лучше проговорить
-                        вслух
-                        <span>Иногда
-                            кажется, что вопрос простой, но при попытке свормулировать хаос мысли в предложение, мы
-                            неизбежно сталкиваемся с пробелами в знаниях или недостаточностью словарного запаса</span>
-                    </li>
-                    <li>Отмечаем карточку в зависимости от ответа</li>
-                    <ul>
-                        <li>&laquo;Знаю&raquo;, если удалось сформулировать уверенный ответ.</li>
-                        <li>&laquo;Требуется повторение&raquo;, если ответ в общих чертах известен, но к настоящему
-                            собеседованию
-                            хотелось бы подтянуть знания по теме.</li>
-                        <li>&laquo;Не знаю&raquo;, если ответа вспомнить не удалось или в нем не было уверенности</li>
-                    </ul>
-                    <li>Повторяем описанные выше действия пока не устанем. Когда это произойдет, можно будет скачать
-                        файлик
-                        с вопросами, на которые игрок ответил &laquo;Не знаю&raquo; или &laquo;Требуется
-                        повторение&raquo; с
-                        помощью кнопки &laquo;Получить результаты&raquo;
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="get-start">
-            <h2><a name="game">Играть</a></h2>
-            <div class="question-block">
-                <h3>Вопрос</h3>
-                <p class="question-text"></p>
-                <h3>Ответ</h3>
-                <ul class="set-result">
-                    <li>
-                        <button class="set-result-button button" type="button" data-result="SOLVED" disabled>
-                            <span>Знаю</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="set-result-button button" type="button" data-result="SOLVED_UNCERTAINTLY"
-                            disabled>
-                            <span>Нужно повторение</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="set-result-button button" type="button" data-result="NOT_SOLVED" disabled>
-                            <span>Не знаю</span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div class="question-block-footer">
-                <button class="get-result-button button" type="button" disabled>
-                    <span>Получить результат</span>
-                </button>
-            </div>
-        </section>
-    </main>
-    <footer class="main-header">
-        <ul class="links-social">
-            <li><a class="link-social" href="https://github.com/FrauRitosika?tab=repositories" target="_blank"><img
-                        height="30" src="img/github.svg" alt="Логотип сервиса HeadHunter"></a></li>
-            <li><a class="link-social" href="https://www.linkedin.com/in/margarita-buslakova-58731626a/"
-                    target="_blank"><img height="30" src="img/linkedin.svg" alt="Логотип LinkedIn"></a></li>
-        </ul>
-    </footer>
+    <div class="root"></div>
 </body>
 
 </html>
