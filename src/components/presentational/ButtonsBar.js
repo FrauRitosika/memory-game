@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "../presentational/Button";
+import Button from "./Button";
+import './ButtonBar.css'
 
 export default function ButtonsBar({ buttonsList, isDisabled=false, onClick}) {
     return (
@@ -10,7 +11,6 @@ export default function ButtonsBar({ buttonsList, isDisabled=false, onClick}) {
                         name={el.actionName}
                         action={el.code}
                         isDisabled={isDisabled}
-                        className="set-result-button"
                         onClick={() => onClick(el.code)}
                     />
                 </li>

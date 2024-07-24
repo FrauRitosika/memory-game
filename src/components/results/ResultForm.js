@@ -1,13 +1,14 @@
 import React from "react";
-import QuestionResult from "../presentational/QuestionResult";
-import Modul from "../presentational/Modal";
+import QuestionResult from "./QuestionResult";
+import Modal from "../presentational/Modal";
+import './ResultForm.css';
 
 export default function ResultForm({ resolvedQuestions = [], onClick }) {
 
     const reviewOuestions = resolvedQuestions.filter((question) => question.result !== 'SOLVED');
 
     return (
-        <Modul
+        <Modal
             data={
                 (() => {
                     switch (reviewOuestions.length) {

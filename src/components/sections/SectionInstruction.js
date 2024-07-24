@@ -1,9 +1,11 @@
 import React from "react";
 import Instruction from "./Instruction";
+import Title from "../presentational/Title";
+import './SectionInstruction.css';
 
 export default function SectionInstruction() {
     return (
-        <section name="rules" className="rules">
+        <section name="rules section" className="rules">
             <div className="rules-main-idea">
                 <img
                     height={400}
@@ -11,9 +13,10 @@ export default function SectionInstruction() {
                     alt="Игрок в VR-очках"
                 />
                 <div className="rules-pre-text">
-                    <h2>
-                        <a name="rules">Правила</a>
-                    </h2>
+                    <Title
+                        titleText='Правила'
+                        contentName='rules'
+                    />
                     <blockquote className="tagline">
                         Многие путают свое воображение со своей памятью
                     </blockquote>

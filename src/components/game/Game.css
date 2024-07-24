@@ -1,0 +1,20 @@
+.get-start {
+    padding-top: 30px;
+    height: 600px;
+}
+
+.get-start::after {
+    position: relative;
+    z-index: -1;
+    content: '';
+    display: block;
+    background-image: url('../../img/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    right: 0;
+    top: -530px;
+    height: 600px;
+    width: 1170px;
+    opacity: 3%;
+}

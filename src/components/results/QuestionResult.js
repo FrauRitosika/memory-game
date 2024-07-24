@@ -1,4 +1,5 @@
 import React from "react";
+import './QuestionResult.css';
 
 export default function QuestionResult({questionText, result}) {
     return (

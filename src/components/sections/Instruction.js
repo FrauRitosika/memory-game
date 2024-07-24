@@ -1,9 +1,10 @@
 import React from "react";
+import './Instruction.css';
 
 export default function Instruction() {
     return (
         <div className="rules-text">
-            <h2>Как играть</h2>
+            <h3 className="subtitle">Как играть</h3>
             <ul>
                 <li>
                     Переходим в раздел{" "}

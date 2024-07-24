@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import Header from "./sections/Header";
+import Game from "./game/Game";
+import Footer from "./sections/Footer";
+import SectionAbout from "./sections/SectionAbout";
+import SectionInstruction from "./sections/SectionInstruction";
+import './App.css';
 
-import Header from "./presentational/Header";
-import Game from "./container /Game";
-import Footer from "./presentational/Footer";
-import SectionAbout from "./presentational/SectionAbout";
-import SectionInstruction from "./presentational/SectionInstruction";
-
-export default function App() {
+export default function App({ questions = [], resultCodes = [] }) {
 
     return (
         <>
             <Header />
             <main className="main-page">
-                <h1 className="visually-hidden">
-                    Карточки для повторения материала по CSS, HTML и JS
+                <h1 className='visually-hidden'>
+                    <a name='page' href='#page' className="content-title">
+                        Карточки для повторения материала по CSS, HTML и JS
+                    </a>
                 </h1>
                 <SectionAbout />
                 <SectionInstruction />
-                <Game />
+                <Game
+                    questions={questions}
+                    resultCodes={resultCodes}
+                />
             </main>
             <Footer />
         </>

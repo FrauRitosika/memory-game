@@ -1,13 +1,16 @@
 import React from "react";
-import ToGameLink from "./ToGameLink";
+import ToGameLink from "../presentational/ToGameLink";
+import Title from "../presentational/Title";
+import './SectionAbout.css';
 
 export default function SectionAbout() {
     return (
-        <section className="about">
+        <section className="about section">
             <div className="about-text-content">
-                <h2>
-                    <a name="about">О проекте</a>
-                </h2>
+            <Title
+                titleText='О проекте'
+                contentName='about'
+            />
                 <blockquote className="tagline">
                     Начинать всегда стоит с того, что сеет сомнение
                 </blockquote>
@@ -18,11 +21,13 @@ export default function SectionAbout() {
                     мне полезно прокручивать в голове.
                 </p>
                 <p>
-                    <a className="link-to-send">Напишите мне</a>, если у вас есть
+                    Напишите мне, если у вас есть
                     замечания, предложения или советы по поиску работы. Привтствуется
                     любая обратная связь.
                 </p>
-                <ToGameLink />
+                <ToGameLink 
+                className = 'about-section-link'
+                />
             </div>
             <img height={450} src="img/img.png" alt="Игровой джойстик" />
         </section>

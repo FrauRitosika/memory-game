@@ -1,10 +1,11 @@
 import React from "react";
-import ToGameLink from "./ToGameLink";
+import ToGameLink from "../presentational/ToGameLink";
+import './Header.css';
 
 export default function Header() {
     return (<header className="main-header">
         <nav className="main-navigation">
-            <a href="#">
+            <a href="#page">
                 <img
                     height={60}
                     href=""

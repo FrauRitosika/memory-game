@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    height: 630px;
+}
+
+.about-section-link {
+    margin-top: 36px;
+}
+
+.about-text-content {
+    padding-top: 50px;
+    width: 530px;
+}

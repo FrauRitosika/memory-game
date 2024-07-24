@@ -1,0 +1,17 @@
+.main-footer {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 55px;
+    margin-bottom: 54px;
+}
+
+.links-social {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: auto;
+}
+
+image {
+    display: block;
+}
