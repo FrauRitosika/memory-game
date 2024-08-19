@@ -3,11 +3,11 @@ import './Instruction.css';
 
 export default function Instruction() {
     return (
-        <div className="rules-text">
+        <section className="rules-text">
             <h3 className="subtitle">Как играть</h3>
             <ul>
                 <li>
-                    Переходим в раздел{" "}
+                    {"Переходим в раздел "}
                     <a className="link" href="#game">
                         Играть
                     </a>
@@ -38,6 +38,6 @@ export default function Instruction() {
                     «Получить результаты»
                 </li>
             </ul>
-        </div>
+        </section>
     );
 }
