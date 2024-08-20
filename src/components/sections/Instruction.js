@@ -1,15 +1,20 @@
 import React from "react";
+import Title from "../presentational/Title";
+import './Instruction.css';
 
 export default function Instruction() {
     return (
-        <div className="rules-text">
-            <h2>Как играть</h2>
+        <section className="rules-text">
+            <div className="subtitle">
+            <Title
+                    title='Как играть'
+                    contentName='instruction'
+                    level={3}
+                />
+            </div>
             <ul>
                 <li>
-                    Переходим в раздел{" "}
-                    <a className="link" href="#game">
-                        Играть
-                    </a>
+                    {"Переходим в раздел "} <a href="#game"> Играть </a>
                 </li>
                 <li>
                     Открывается первая карточка, в которой нужно изучить текст вопроса
@@ -37,6 +42,6 @@ export default function Instruction() {
                     «Получить результаты»
                 </li>
             </ul>
-        </div>
+        </section>
     );
 }

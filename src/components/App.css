@@ -1,0 +1,27 @@
+.page-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 0 auto;
+    padding: 0;
+    width: 1170px;
+    box-sizing: border-box;
+}
+
+.about {
+    padding: 0 30px;
+}
+
+.rules {
+    padding: 0 120px;
+}
+
+.about-text-container {
+    width: 530px;
+}
+
+.paragraph-about {
+    margin: 19px 0;
+}
