@@ -11,7 +11,7 @@ export default function Footer() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <img className="image"
+                        <img className="img"
                             height={30}
                             src="img/github.svg"
                             alt="Логотип сервиса HeadHunter"
@@ -24,7 +24,7 @@ export default function Footer() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <img className="image"
+                        <img className="img"
                             height={30}
                             src="img/linkedin.svg"
                             alt="Логотип LinkedIn" />

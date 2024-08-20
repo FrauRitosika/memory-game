@@ -1,12 +1,8 @@
 import React from "react";
 import './Title.css';
 
-export default function Title({ titleText, contentName, className }) {
+export default function Title({ title, contentName, level }) {
     return (
-        <h2 className={`${className}`}>
-            <a name={contentName} href={`#${contentName}`} className="content-title">
-                {titleText}
-            </a>
-        </h2>
+        <h2 className={`title title-level-${level}`} id={contentName}>{title}</h2>
     );
 }

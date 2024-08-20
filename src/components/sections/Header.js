@@ -1,5 +1,6 @@
 import React from "react";
 import ToGameLink from "../presentational/ToGameLink";
+import Link from "../presentational/Link";
 import './Header.css';
 
 export default function Header() {
@@ -11,18 +12,21 @@ export default function Header() {
                     href=""
                     src="img/book-opened-svgrepo-com.svg"
                     alt="Логотип"
+                    className="img"
                 />
             </a>
             <ul className="sections-navigation">
                 <li className="section-nav-item">
-                    <a className="link" href="#about">
-                        О проекте
-                    </a>
+                    <Link
+                        path='#about'
+                        text='О проекте'
+                    />
                 </li>
                 <li className="section-nav-item">
-                    <a className="link" href="#rules">
-                        Правила
-                    </a>
+                    <Link
+                        path='#rules'
+                        text='Правила'
+                    />
                 </li>
                 <li className="section-nav-item">
                     <ToGameLink />

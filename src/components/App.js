@@ -1,7 +1,7 @@
 import Header from './sections/Header';
 import Game from './game/Game';
 import Footer from './sections/Footer';
-import SectionText from './sections/SectionText';
+import SectionText from './sections/Section';
 import ToGameLink from './presentational/ToGameLink';
 import Instruction from "./sections/Instruction";
 import './App.css';
@@ -9,7 +9,7 @@ import './App.css';
 export default function App({ questions = [], resultCodes = [] }) {
 
     return (
-        <>
+        <div className='page-container'>
             <Header />
             <main className='main-page'>
                 <h1 className='visually-hidden'>
@@ -63,6 +63,6 @@ export default function App({ questions = [], resultCodes = [] }) {
                 />
             </main >
             <Footer />
-        </>
+        </div>
     );
 }

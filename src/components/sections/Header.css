@@ -22,9 +22,9 @@
     align-items: center;
     list-style: none;
     gap: 45px;
+    color: rgba(68, 99, 129, 1);
 }
 
-.link {
-    color: rgba(68, 99, 129, 1);
-    text-decoration: none;
+.img {
+    display: block;
 }

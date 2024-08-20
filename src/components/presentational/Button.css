@@ -11,6 +11,7 @@
     text-align: center;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
     transition: opacity 0.6s;
+    cursor: pointer;
     
 }
 
@@ -19,8 +20,7 @@
     background: linear-gradient(94.66deg, #8bacc684 17.46%, #928cb7b9 87.77%);
 }
 
-.button:active:not(:disabled),
-.link:active {
+.button:active {
     opacity: 0.8;
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);

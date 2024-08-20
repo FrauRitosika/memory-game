@@ -1,7 +1,6 @@
-
-
-img {
-    display: block;
+.page-container {
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .section {
@@ -26,4 +25,3 @@ img {
 .paragraph-about {
     margin: 19px 0;
 }
-
