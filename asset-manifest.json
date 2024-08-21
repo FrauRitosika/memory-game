@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.977cb1a9.css",
-    "main.js": "/memory-game/static/js/main.c2840eac.js",
-    "static/media/image.png": "/memory-game/static/media/image.200c1f20f590b64c2f44.png",
+    "main.css": "/memory-game/static/css/main.4c127cb6.css",
+    "main.js": "/memory-game/static/js/main.34860653.js",
+    "static/media/game-background.png": "/memory-game/static/media/game-background.200c1f20f590b64c2f44.png",
+    "static/media/img.png": "/memory-game/static/media/img.39e390b3fd8285ce2b5c.png",
+    "static/media/CFARACTER.png": "/memory-game/static/media/CFARACTER.d4be95f6f1a04b93ffd8.png",
+    "static/media/book-opened-svgrepo-com.svg": "/memory-game/static/media/book-opened-svgrepo-com.5c7807f128c49b81393a523c9f655eb4.svg",
+    "static/media/github.svg": "/memory-game/static/media/github.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "static/media/linkedin.svg": "/memory-game/static/media/linkedin.88d7f76de0ddebf1a7e4c8327f511dff.svg",
     "index.html": "/memory-game/index.html",
     "static/media/icons-close.svg": "/memory-game/static/media/icons-close.96988622d6491aa7f0d3.svg",
-    "main.977cb1a9.css.map": "/memory-game/static/css/main.977cb1a9.css.map",
-    "main.c2840eac.js.map": "/memory-game/static/js/main.c2840eac.js.map"
+    "main.4c127cb6.css.map": "/memory-game/static/css/main.4c127cb6.css.map",
+    "main.34860653.js.map": "/memory-game/static/js/main.34860653.js.map"
   },
   "entrypoints": [
-    "static/css/main.977cb1a9.css",
-    "static/js/main.c2840eac.js"
+    "static/css/main.4c127cb6.css",
+    "static/js/main.34860653.js"
   ]
 }
