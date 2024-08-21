@@ -1,20 +1,22 @@
-.main-header {
-    margin: 0 auto;
-    width: 1170px;
-    padding: 0 55px;
-    margin-bottom: 54px;
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px 55px 0 55px;
 }
 
-.main-navigation {
+
+.navigation {
     margin: 0;
-    padding: 0;
-    padding-top: 26px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.sections-navigation {
+.navigation__logo {
+    width: 60px;
+}
+
+.navigation__link-list {
     margin: 0;
     padding: 0;
     display: flex;
@@ -25,6 +27,13 @@
     color: rgba(68, 99, 129, 1);
 }
 
-.img {
+.logo {
+    width: 100%;
+}
+
+.logo__img {
     display: block;
 }
+
+
+

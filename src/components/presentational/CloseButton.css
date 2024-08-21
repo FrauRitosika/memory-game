@@ -3,7 +3,7 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-image: url('../../img/icons-close.svg');
+    background-image: url('/src/media/icons-close.svg');
     background-size: cover;
     cursor: pointer;
     margin-left: auto;

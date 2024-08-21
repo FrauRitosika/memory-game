@@ -6,7 +6,7 @@ async function getSheet() {
             if (response.ok) {
                 return response.json();
             } else {
-                alert("Ошибка HTTP: " + response);
+                alert('Ошибка HTTP: ' + response);
             }
         })
             .then(json => {

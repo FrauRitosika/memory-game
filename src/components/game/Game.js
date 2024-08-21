@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import GameForm from "../game/GameForm";
-import ResultForm from "../results/ResultForm";
-import './Game.css'
+import React, { useState } from 'react';
+import GameForm from '../game/GameForm';
+import ResultForm from '../results/ResultForm';
+import './Game.css';
 
 const getRandomId = (max) => Math.floor(Math.random() * max);
 
 
-export default function Game({questions=[], resultCodes=[]}) {
+export default function Game({ questions = [], resultCodes = [] }) {
 
     const [resolvedQuestions, setResolved] = useState([]);
 
@@ -38,14 +38,16 @@ export default function Game({questions=[], resultCodes=[]}) {
     };
 
     return (
-        <section className="get-start section">
+        <section className='game'>
             <GameForm
+                className='game__form'
                 currentQuestionText={currentQuestion.questionText}
                 buttonsList={resultCodes.filter((code) => code.isFinal === true)}
                 setResult={setResult}
                 openCurrentResult={openCurrentResult}
             />
             {isOpenResult && <ResultForm
+                className='game__result'
                 resolvedQuestions={resolvedQuestions}
                 onClick={closeCurrentResult}
             />}

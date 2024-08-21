@@ -5,20 +5,22 @@ import './Section.css';
 export default function Section({ title, img, blockquote, tagParams, children }) {
     return (
         <section className={`${tagParams.class} section`}>
-            <div className={`section-container--${tagParams.directionMode === 'reverse' ? 'reverse' : 'forward'}`}>
-                {!!img && <img
-                    className='img'
-                    height={img.height}
-                    src={img.url}
-                    alt={img.alt}
-                />}
-                <div className={`section-container-text-${tagParams.class}`}>
+            <div className={`section__container--${tagParams.directionMode === 'reverse' ? 'reverse' : 'forward'}`}>
+                {!!img && <div className='section__img-container'>
+                    <img
+                        className='section__img'
+                        width={img.width}
+                        src={img.src}
+                        alt={img.alt}
+                    />
+                </div>}
+                <div className='section__container-text'>
                     <Title
-                        title={title.text ?? 'Заголовок'}
+                        className='section__title'
                         contentName={title.contentName ?? ''}
                         level={2}
-                    />
-                    {!!blockquote && <blockquote className='tagline'>
+                    >{title.text ?? 'Заголовок'}</Title>
+                    {!!blockquote && <blockquote className='section__tagline tagline'>
                         {blockquote.text}
                     </blockquote>}
                     {children}
