@@ -2,15 +2,15 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.question-result-text {
+.question-result__text {
     margin: 0;
-    margin-bottom: 30px;
     padding: 0;
 }
 
-.question-result-status {
+.question-result__status {
     font-size: 12px;
     min-width: 100px;
     height: 30px;
@@ -22,10 +22,10 @@
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
 }
 
-.result-status-reviewed {
+.question-result__status--reviewed {
     background: linear-gradient(94.66deg, #5bdba652 17.46%, #41994a4f 87.77%);
 } 
 
-.result-status-unresolved {
+.question-result__status--unresolved {
     background: linear-gradient(94.66deg, #fff83282 17.46%, #ada5136c 87.77%);
 } 

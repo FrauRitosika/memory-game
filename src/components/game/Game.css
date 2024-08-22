@@ -1,19 +1,20 @@
-.get-start {
+.game {
+    position: relative;
     padding-top: 30px;
     height: 600px;
+    color: rgba(68, 99, 129, 1);
 }
 
-.get-start::after {
-    position: relative;
+.game::after {
+    position: absolute;
     z-index: -1;
     content: '';
     display: block;
-    background-image: url('../../img/image.png');
+    background-image: url('/src/media/game-background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     right: 0;
-    top: -530px;
+    top: 0;
     height: 600px;
     width: 1170px;
     opacity: 3%;

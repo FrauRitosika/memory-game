@@ -4,33 +4,37 @@ import Footer from './sections/Footer';
 import SectionText from './sections/Section';
 import ToGameLink from './presentational/ToGameLink';
 import Instruction from "./sections/Instruction";
+import Title from './presentational/Title';
+import imgGameStick from '../media/img.png';
+import imgVR from '../media/CFARACTER.png';
 import './App.css';
 
 export default function App({ questions = [], resultCodes = [] }) {
 
     return (
-        <div className='page-container'>
-            <Header />
-            <main className='main-page'>
-                <h1 className='visually-hidden'>
-                    <a name='page' href='#page' className='content-title'>
-                        Карточки для повторения материала по CSS, HTML и JS
-                    </a>
-                </h1>
+        <div className='page'>
+            <Header className='page__header' />
+            <main className='page__main'>
+                <Title
+                    className='page__tittle--visually-hidden'
+                    contentName='page'
+                    level={1}
+                >Карточки для повторения материала по CSS, HTML и JS</Title>
                 <SectionText
+                    className='page__section-about'
                     title={{ text: 'О проекте', contentName: 'about' }}
-                    img={{ height: 450, url: 'img/img.png', alt: 'Игровой джойстик' }}
+                    img={{ width: 550, src: imgGameStick, alt: 'Игровой джойстик' }}
                     tagParams={{ class: 'about', directionMode: 'reverse' }}
-                    blockquote={{text: 'Начинать всегда стоит с того, что сеет сомнение'}}
+                    blockquote={{ text: 'Начинать всегда стоит с того, что сеет сомнение' }}
                 >
-                    <div>
-                        <p className='paragraph-about'>
+                    <div className='page__paragraph-about-container'>
+                        <p className='page__paragraph'>
                             Это мог быть чат-бот в Telegram, но я начинающий frontend-разработчик
                             и мне нужна страничка для тренировок приобретённых умений и подготовки
                             к собеседованиям. На этой страничке собраны вопросы, ответы на которые
                             мне полезно прокручивать в голове.
                         </p>
-                        <p className='paragraph-about'>
+                        <p className='page__paragraph-about'>
                             Напишите мне, если у вас есть
                             замечания, предложения или советы по поиску работы. Привтствуется
                             любая обратная связь.
@@ -41,28 +45,32 @@ export default function App({ questions = [], resultCodes = [] }) {
                     </div>
                 </SectionText>
                 <SectionText
+                    className='page__section-rules'
                     title={{ text: 'Правила', contentName: 'rules' }}
-                    img={{ height: 400, url: 'img/CFARACTER.png', alt: 'Игрок в VR-очках' }}
+                    img={{ width: 400, src: imgVR, alt: 'Игрок в VR-очках' }}
                     tagParams={{ class: 'rules', directionMode: 'forward' }}
                     blockquote={{ text: 'Многие путают свое воображение со своей памятью' }}
                 >
-                    <div>
-                        <p>
+                    <div className='page__paragraph-container'>
+                        <p className='page__paragraph'>
                             Карточки для запоминания – это инструмент, помогающий учащимся
                             эффективно запоминать информацию и улучшать свои навыки. С их
                             помощью можно разбить учебный материал на удобные для запоминания
                             кусочки.
                         </p>
-                        
+
                     </div>
                 </SectionText>
-                <Instruction />
+                <Instruction
+                    className='page__section-instruction'
+                />
                 <Game
+                    className='page__section'
                     questions={questions}
                     resultCodes={resultCodes}
                 />
             </main >
-            <Footer />
+            <Footer className='page__footer' />
         </div>
     );
 }

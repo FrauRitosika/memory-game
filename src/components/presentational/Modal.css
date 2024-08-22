@@ -1,4 +1,4 @@
-.modal-container {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
     cursor: pointer;
 } 
 
-.modal-data {
+.modal__data {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -17,14 +17,12 @@
     border-radius: 20px;
     opacity: 100%;
     cursor: auto;
-
+    color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-title {
+.modal__title {
     margin: 0;
     margin-bottom: 30px;
     text-align: left;
     color: rgba(68, 99, 129, 1);
-    font-weight: 750;
-    font-size: 26px;
 }

@@ -1,8 +1,19 @@
-import React from "react";
+import React from 'react';
 import './Title.css';
 
-export default function Title({ title, contentName, level }) {
+export default function Title({ contentName, level, className='', children }) {
+
+    let Heading = 'h1';
+    let newClass = 'title';
+
+    if (Number.isInteger(level) && level > 0) {
+        Heading = `h${Number(level)}`;
+        newClass = `${newClass} title--level-${Number(level)}`;
+    }
+
+    className = `${className} ${newClass}`;
+
     return (
-        <h2 className={`title title-level-${level}`} id={contentName}>{title}</h2>
+        <Heading className={className} id={contentName}>{children}</Heading>
     );
 }

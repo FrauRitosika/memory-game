@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './Button.css'
 
 export default function Button({name, action, className, isDisabled=false, onClick}) {
@@ -6,12 +6,12 @@ export default function Button({name, action, className, isDisabled=false, onCli
     return (
         <button
             className={`button ${className}`}
-            type="button"
+            type='button'
             data-result={action}
             disabled={isDisabled}
             onClick={onClick}
         >
-            <span>{name}</span>
+            <span className='button__name'>{name}</span>
         </button>
     );
 }

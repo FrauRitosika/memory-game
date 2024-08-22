@@ -7,27 +7,31 @@ import './GameForm.css';
 export default function GameForm({ currentQuestionText, buttonsList, setResult, openCurrentResult }) {
 
     return (
-        <div>
-            <div className='game-title'>
+        <div className='game-form'>
+            <Title
+                className='game-form__title'
+                contentName='game'
+                level={2}
+            >Играть</Title>
+            <div className='game-form__question question-card'>
                 <Title
-                    title='Играть'
-                    contentName='game'
-                    level={2}
-                />
-            </div>
-            <div className='question-block'>
-                <h3>Вопрос</h3>
-                <p className='question-text' >{currentQuestionText}</p>
-                <h3>Ответ</h3>
+                    className='question-card__title'
+                    level={3}
+                >Вопрос</Title>
+                <p className='question-card__text'>{currentQuestionText}</p>
+                <Title
+                    className='question-card__title'
+                    level={3}
+                >Ответ</Title>
                 <ButtonsBar
                     buttonsList={buttonsList}
                     onClick={setResult}
                 />
             </div>
-            <div className='question-block-footer'>
+            <div className='question-card__footer-container'>
                 <Button
                     name='Получить результат'
-                    className='get-result-button'
+                    className='question-card__get-result-button'
                     onClick={openCurrentResult}
                 />
             </div>

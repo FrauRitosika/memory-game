@@ -1,12 +1,12 @@
-.rules-text {
+.instruction {
     width: 770px;
-    margin: 0 auto 80px auto;
 }
 
 .instruction-title {
     text-align: center;
 }
 
-.subtitle {
+.instruction__title {
     text-align: center;
+    color: rgba(68, 99, 129, 1);
 }

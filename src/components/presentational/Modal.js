@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import CloseButton from "./CloseButton";
 import './Modal.css';
+import Title from "./Title";
 
-export default function Modal({ data, title, onClick, classNameWindow }) {
+export default function Modal({ title, onClick, classNameWindow, children }) {
 
     const modalRef = useRef();
     useEffect(() => {
@@ -18,11 +19,14 @@ export default function Modal({ data, title, onClick, classNameWindow }) {
     }, [onClick]);
 
     return (
-        <div className="modal-container">
-            <div ref={modalRef} className={`modal-data ${classNameWindow}`}>
+        <div className="modal">
+            <div ref={modalRef} className={`modal__data ${classNameWindow}`}>
                 <CloseButton onClick={onClick} />
-                <h3 className="modal-title">{title}</h3>
-                {data}
+                <Title
+                    className='modal__title'
+                    level={3}
+                >{title}</Title>
+                {children}
             </div>
         </div>
     );
